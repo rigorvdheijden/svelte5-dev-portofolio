@@ -46,3 +46,28 @@ git commit -m 'Added my project'
 git remote add origin git@github.com:rigorvdheijden/svelte5-dev-portofolio.git
 git push -u -f origin main
 ```
+
+# Sanity
+
+Local version: http://localhost:3333
+
+Sanity studion is deployed to: https://rigor-svelte5-dev-portofolio.sanity.studio/
+
+> Do not forget to set the CORS origins under the api tab
+
+## Extract type info from schema
+
+Add a new schema file to schemaTypes folder and define the schema.
+
+```bash
+nxp sanity schema extract
+nxp sanity typegen generate
+```
+
+## Deploy sanity studio
+
+Deloy the sanity studio.
+
+```bash
+npx sanity deploy
+```
